@@ -1,8 +1,33 @@
 #include "exercises.h"
 
+int maxCrossing(int A[], int &l, int &m, int &r){
+    int s1=0,s2=0;
+    for (int k1=l;k1<m;k1++){
+        s1+=A[k1];
+    }
+    for(int k1=m;k1<=r;k1++){
+        s2+=A[k1];
+    }
+    if (s1>s2) return s1;
+    else if (s2>=s1) return s2;
+}
+int max(int v1,int v2, int v3){
+    if(v1>v2&&v1>v3)
+        return v1;
+    if(v2>v1&&v2>v3)
+        return v2;
+    if(v3>v2&&v3>v1)
+        return v3;
+    else return v1;
+}
 int maxSubsequenceDC(int A[], unsigned int n, int &i, int &j) {
-    //TODO
-	return 0;
+    if (i==j) return A[i];
+    int q1=(i+j)/2;
+    int L=maxSubsequenceDC(A,n,i,q1);
+    int q2=q1+1;
+    int R=maxSubsequenceDC(A,n,q2,j);
+    int C=maxCrossing(A,i,q1,j);
+	return max(L,R,C);
 }
 
 /// TESTS ///

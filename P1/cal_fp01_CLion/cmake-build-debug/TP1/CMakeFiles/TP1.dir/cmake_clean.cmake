@@ -1,16 +1,14 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TP1.dir/ex1.cpp.obj"
-  "CMakeFiles/TP1.dir/ex2.cpp.obj"
-  "CMakeFiles/TP1.dir/ex3.cpp.obj"
-  "CMakeFiles/TP1.dir/ex4.cpp.obj"
-  "CMakeFiles/TP1.dir/ex5.cpp.obj"
-  "CMakeFiles/TP1.dir/ex6.cpp.obj"
-  "CMakeFiles/TP1.dir/ex7.cpp.obj"
-  "CMakeFiles/TP1.dir/main.cpp.obj"
-  "TP1.exe"
-  "TP1.exe.manifest"
+  "CMakeFiles/TP1.dir/ex1.cpp.o"
+  "CMakeFiles/TP1.dir/ex2.cpp.o"
+  "CMakeFiles/TP1.dir/ex3.cpp.o"
+  "CMakeFiles/TP1.dir/ex4.cpp.o"
+  "CMakeFiles/TP1.dir/ex5.cpp.o"
+  "CMakeFiles/TP1.dir/ex6.cpp.o"
+  "CMakeFiles/TP1.dir/ex7.cpp.o"
+  "CMakeFiles/TP1.dir/main.cpp.o"
+  "TP1"
   "TP1.pdb"
-  "libTP1.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

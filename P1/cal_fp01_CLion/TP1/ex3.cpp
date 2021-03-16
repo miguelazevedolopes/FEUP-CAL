@@ -3,8 +3,20 @@
 #include "exercises.h"
 
 bool changeMakingBF(unsigned int C[], unsigned int Stock[], unsigned int n, unsigned int T, unsigned int usedCoins[]) {
-    //TODO...
-
+    int aux=T;
+    for(int i=n-1;i>=0;i--){
+        while(Stock[i]>0){
+            if ((aux - C[i]) >= 0) {
+                aux -= C[i];
+                usedCoins[i] += 1;
+                Stock[i]-=1;
+            }
+            else break;
+        }
+    }
+    if (aux==0){
+        return true;
+    }
     return false;
 }
 
