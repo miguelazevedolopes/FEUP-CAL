@@ -1,11 +1,22 @@
 // By: Gonçalo Leão
 
 #include "exercises.h"
-
+#include <bits/stdc++.h>
+using namespace std;
 bool changeMakingBF(unsigned int C[], unsigned int Stock[], unsigned int n, unsigned int T, unsigned int usedCoins[]) {
-    //TODO...
+    vector<int> coins,coinsBackup;
 
-    return false;
+    for(int i=0;i<n;i++){
+        while(Stock[i]>0){
+            coins.push_back(C[i]);
+            coinsBackup.push_back(C[i]);
+            Stock[i]--;
+        }
+    }
+    for (auto i:coins){
+
+    }
+
 }
 
 /// TESTS ///
