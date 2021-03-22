@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TP3.dir/TP3/ex1.cpp.obj"
-  "CMakeFiles/TP3.dir/TP3/ex2.cpp.obj"
-  "TP3.exe"
-  "TP3.exe.manifest"
+  "CMakeFiles/TP3.dir/TP3/ex1.cpp.o"
+  "CMakeFiles/TP3.dir/TP3/ex2.cpp.o"
+  "TP3"
   "TP3.pdb"
-  "libTP3.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

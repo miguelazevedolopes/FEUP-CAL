@@ -330,9 +330,9 @@ cxxabi.h
 acxx_demangle.h
 -
 
-C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P3/TP3/ex1.cpp
+/home/miguel/Desktop/FACULDADE/CAL/P3/TP3/ex1.cpp
 exercises.h
-C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P3/TP3/exercises.h
+/home/miguel/Desktop/FACULDADE/CAL/P3/TP3/exercises.h
 limits
 -
 thread
@@ -354,7 +354,7 @@ random
 stdlib.h
 -
 
-C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P3/TP3/exercises.h
+/home/miguel/Desktop/FACULDADE/CAL/P3/TP3/exercises.h
 vector
 -
 ostream

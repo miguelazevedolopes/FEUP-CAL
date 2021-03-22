@@ -1,3 +1,4 @@
+/*
 #include "exercises.h"
 
 #include <limits>
@@ -51,9 +52,11 @@ Result::Result(double dmin, Point p1, Point p2): dmin(dmin), p1(p1), p2(p2) {
 Result::Result(): Result(MAX_DOUBLE, Point(0,0), Point(0,0)) {
 }
 
+*/
 /**
  * Defines the number of threads to be used.
- */
+ *//*
+
 static int numThreads = 1;
 void setNumThreads(int num) {
     numThreads = num;
@@ -107,14 +110,16 @@ Result nearestPoints_DC(std::vector<Point> &vp) {
     return res;
 }
 
-Result nearestPoints_DC_recursion(std::vector<Point> &vp) {
-    auto vleft=vp[0]
+*/
+/*Result nearestPoints_DC_recursion(std::vector<Point> &vp) {
+    auto vleft=vp[0];
     if(vp.size()>2){
-        nearestPoints_DC_recursion(vp)
+        nearestPoints_DC_recursion(vp);
     }
 
     return ;
-}
+}*//*
+
 
 Result nearestPoints_DC_MT(std::vector<Point> &vp) {
     Result res;
@@ -133,9 +138,11 @@ Result nearestPoints_DC_MT(std::vector<Point> &vp) {
 
 #define REL_PATH "../TP3/" // relative path to the tests
 
+*/
 /**
  * Auxiliary function to read points from file to vector.
- */
+ *//*
+
 void readPoints(std::string in, std::vector<Point> &vp) {
     std::ifstream is(REL_PATH + in);
     vp.clear();
@@ -151,9 +158,11 @@ void readPoints(std::string in, std::vector<Point> &vp) {
     }
 }
 
+*/
 /**
  * Auxiliary functions to generate random sets of points.
- */
+ *//*
+
 void shuffle(std::vector<Point> &vp, int left, int right) {
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -218,13 +227,15 @@ void generateRandomConstX(int n, std::vector<Point> &vp) {
     shuffleY(vp, 0, n-1);
 }
 
+*/
 /**
  * Auxiliary functions to obtain current time and time elapsed
  * in milliseconds.
  * Something like GetTickCount but portable.
  * It rolls over every ~ 12.1 days (0x100000/24/60/60)
  * Use GetMilliSpan to correct for rollover
- */
+ *//*
+
 int GetMilliCount() {
     timeb tb;
     ftime( &tb );
@@ -250,11 +261,13 @@ int testNP(std::string name, std::vector<Point> &points, double dmin, NP_FUNC fu
     return nTimeElapsed;
 }
 
+*/
 /**
  * Runs the given algorithm (func) for an input file (in)
  * and checks the expected result (res).
  * Prints result and performance information.
- */
+ *//*
+
 int testNPFile(std::string in, double dmin, NP_FUNC func, std::string alg) {
     std::vector<Point> pontos;
     readPoints(in, pontos);
@@ -273,9 +286,11 @@ int testNPRandConstX(int size, std::string name, double dmin, NP_FUNC func, std:
     return testNP(name, pontos, dmin, func, alg);
 }
 
+*/
 /**
  * Runs the given algorithm for the existent data files.
- */
+ *//*
+
 
 void testNearestPoints(NP_FUNC func, std::string alg) {
     std::cout << "algorithm; data set; time elapsed (ms); distance; point1; point2" << std::endl;
@@ -288,7 +303,8 @@ void testNearestPoints(NP_FUNC func, std::string alg) {
         return;
     if (testNPFile("Pontos16k", 13.0384, func, alg) > maxTime)
         return;
-    /*
+    */
+/*
     // Uncomment to use more tests
     if (testNPFile("Pontos32k", 1.0, func, alg) > maxTime)
         return;
@@ -304,7 +320,8 @@ void testNearestPoints(NP_FUNC func, std::string alg) {
         return;
     if ( testNPRand(0x200000, "Pontos2M",  1.0, func, alg) > maxTime)
         return;
-    */
+    *//*
+
 }
 
 TEST(TP3_Ex1, testNP_BF) {
@@ -332,4 +349,4 @@ TEST(TP3_Ex1, testNP_DC_4Threads) {
 TEST(TP3_Ex1, testNP_DC_8Threads) {
     setNumThreads(8);
     testNearestPoints(nearestPoints_DC_MT, "Divide and conquer with 8 threads");
-}
+}*/
