@@ -12,10 +12,14 @@ bool Activity::operator<(const Activity &a2) const {
 }
 
 std::vector<Activity> earliestFinishScheduling(std::vector<Activity> A) {
-    //TODO...
 
+    std::sort(A.begin(),A.end());
     std::vector<Activity> res;
-
+    res.push_back(A[0]);
+    for(auto x:A){
+        if(x.start>res[res.size()-1].finish)
+            res.push_back(x);
+    }
     return res;
 }
 

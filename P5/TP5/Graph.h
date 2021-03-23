@@ -195,8 +195,16 @@ bool Graph<T>::removeVertex(const T &in) {
  */
 template <class T>
 std::vector<T> Graph<T>::dfs() const {
-    // TODO (7 lines)
     std::vector<T> res;
+    for (auto v:vertexSet){
+        v->visited=false;
+    }
+    for(auto v:vertexSet){
+        if(!v->visited){
+            dfsVisit(v,res);
+        }
+    }
+
     return res;
 }
 
@@ -206,7 +214,13 @@ std::vector<T> Graph<T>::dfs() const {
  */
 template <class T>
 void Graph<T>::dfsVisit(Vertex<T> *v, std::vector<T> & res) const {
-    // TODO (7 lines)
+    v->visited=true;
+    res.push_back(v->info);
+    for(auto e:v->adj){
+        if(e.dest->visited==false){
+            dfsVisit(e.dest,res);
+        }
+    }
 }
 
 /****************** 2b) bfs ********************/
@@ -223,6 +237,22 @@ std::vector<T> Graph<T>::bfs(const T & source) const {
     // HINT: Use the flag "visited" to mark newly discovered vertices .
     // HINT: Use the "queue<>" class to temporarily store the vertices.
     std::vector<T> res;
+    for (auto v:vertexSet){
+        v->visited=false;
+    }
+    std::queue<Vertex<T>*> aux;
+    aux.push(vertexSet[0]);
+    while(!aux.empty()){
+        auto v=aux.front();
+        v->visited=true;
+        res.push_back(v->info);
+        aux.pop();
+        for(auto e:v->adj){
+            if(e.dest->visited==false){
+                aux.push(e.dest);
+            }
+        }
+    }
     return res;
 }
 

@@ -4,19 +4,51 @@
 #include <bits/stdc++.h>
 using namespace std;
 bool changeMakingBF(unsigned int C[], unsigned int Stock[], unsigned int n, unsigned int T, unsigned int usedCoins[]) {
-    vector<int> coins,coinsBackup;
+    vector <unsigned int> indices;
+    vector<unsigned int> temp_stock;
+    vector <unsigned int> temp_usedCoins;
+    vector<unsigned int> used_coins;
+    unsigned int temp_change = T;
+    int num_coins = 100000;
+    int temp_num_coins = 0;
+    bool found = false;
+    for(int i = 0; i < n ; i++) temp_stock.push_back(Stock[i]);
+    for(unsigned int i = 0 ; i < n; i++) indices.push_back(i);
 
-    for(int i=0;i<n;i++){
-        while(Stock[i]>0){
-            coins.push_back(C[i]);
-            coinsBackup.push_back(C[i]);
-            Stock[i]--;
+    int i = 0;
+    do {
+        while(i < n){
+            if(temp_change == 0) break;
+            else if (C[indices.at(i)] > temp_change) i++;
+            else if (temp_stock.at(indices.at(i)) == 0) i++;
+            else{
+                temp_usedCoins.push_back(C[indices.at(i)]);
+                temp_change -= C[indices.at(i)];
+                temp_num_coins++;
+                temp_stock.at(indices.at(i))--;
+            }
         }
-    }
-    for (auto i:coins){
+        if(temp_change == 0 && temp_num_coins < num_coins) {
+            found = true;
+            num_coins = temp_num_coins;
+            for(int x = 0; x < n; x++){
+                usedCoins[x] = 0;
+                for(auto &c : temp_usedCoins){
+                    if(c == C[x]){
+                        usedCoins[x]++;
+                    }
+                }
+            }
+        }
+        i = 0;
+        temp_change = T;
+        temp_usedCoins.clear();
+        temp_num_coins = 0;
+        for(int i = 0; i < n ; i++) temp_stock.at(i) = Stock[i];
+    } while (next_permutation(indices.begin(), indices.end()));
 
-    }
-
+    if(!found) return false;
+    return true;
 }
 
 /// TESTS ///
