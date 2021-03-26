@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P2/TP2/ex1.cpp" "C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P2/cmake-build-debug/TP2/CMakeFiles/TP2.dir/ex1.cpp.obj"
-  "C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P2/TP2/ex2.cpp" "C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P2/cmake-build-debug/TP2/CMakeFiles/TP2.dir/ex2.cpp.obj"
-  "C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P2/TP2/ex3.cpp" "C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P2/cmake-build-debug/TP2/CMakeFiles/TP2.dir/ex3.cpp.obj"
-  "C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P2/TP2/ex4.cpp" "C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P2/cmake-build-debug/TP2/CMakeFiles/TP2.dir/ex4.cpp.obj"
-  "C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P2/TP2/main.cpp" "C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P2/cmake-build-debug/TP2/CMakeFiles/TP2.dir/main.cpp.obj"
+  "/home/miguel/Desktop/FACULDADE/CAL/P2/TP2/ex1.cpp" "/home/miguel/Desktop/FACULDADE/CAL/P2/cmake-build-debug/TP2/CMakeFiles/TP2.dir/ex1.cpp.o"
+  "/home/miguel/Desktop/FACULDADE/CAL/P2/TP2/ex2.cpp" "/home/miguel/Desktop/FACULDADE/CAL/P2/cmake-build-debug/TP2/CMakeFiles/TP2.dir/ex2.cpp.o"
+  "/home/miguel/Desktop/FACULDADE/CAL/P2/TP2/ex3.cpp" "/home/miguel/Desktop/FACULDADE/CAL/P2/cmake-build-debug/TP2/CMakeFiles/TP2.dir/ex3.cpp.o"
+  "/home/miguel/Desktop/FACULDADE/CAL/P2/TP2/ex4.cpp" "/home/miguel/Desktop/FACULDADE/CAL/P2/cmake-build-debug/TP2/CMakeFiles/TP2.dir/ex4.cpp.o"
+  "/home/miguel/Desktop/FACULDADE/CAL/P2/TP2/main.cpp" "/home/miguel/Desktop/FACULDADE/CAL/P2/cmake-build-debug/TP2/CMakeFiles/TP2.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,10 +22,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P2/cmake-build-debug/lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P2/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
-  "C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P2/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
-  "C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P2/cmake-build-debug/lib/googletest-master/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/miguel/Desktop/FACULDADE/CAL/P2/cmake-build-debug/lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "/home/miguel/Desktop/FACULDADE/CAL/P2/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
+  "/home/miguel/Desktop/FACULDADE/CAL/P2/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
+  "/home/miguel/Desktop/FACULDADE/CAL/P2/cmake-build-debug/lib/googletest-master/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

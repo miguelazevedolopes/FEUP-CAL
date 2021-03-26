@@ -40,18 +40,7 @@ bool Sudoku::solveRecursive(int x, int y){
     return true;
 }
 bool Sudoku::solve() {
-    if (isComplete()) return true;
-    for (int i = 0; i < 9; i++) {
-        for (int j = 0; j < 9; j++) {
-            if(numbers[i,j]==0){
-                for (int k= 0; k < 9; k++) {
-                    if(accepts(i,j,k)){
 
-                    }
-                }
-            }
-        }
-    }
     return true;
 }
 

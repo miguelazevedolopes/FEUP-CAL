@@ -17,15 +17,7 @@
   <component name="ChangeListManager">
     <list default="true" id="23b6535e-b699-4671-bb9d-c81bd1f22481" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP1/ex3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/ex3.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP1/ex5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/ex5.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP1/ex6.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TP1/ex6.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TP1/CMakeFiles/TP1.dir/ex3.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TP1/CMakeFiles/TP1.dir/ex3.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TP1/CMakeFiles/TP1.dir/ex4.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TP1/CMakeFiles/TP1.dir/ex4.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TP1/CMakeFiles/TP1.dir/ex5.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TP1/CMakeFiles/TP1.dir/ex5.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TP1/CMakeFiles/TP1.dir/ex6.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TP1/CMakeFiles/TP1.dir/ex6.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TP1/TP1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TP1/TP1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +49,6 @@
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CAL-TP_classes" TARGET_NAME="gmock" CONFIG_NAME="Debug">
@@ -107,6 +94,7 @@
       <updated>1614079253285</updated>
       <workItem from="1616324353676" duration="5442000" />
       <workItem from="1616431370836" duration="8204000" />
+      <workItem from="1616681535737" duration="1712000" />
     </task>
     <task id="LOCAL-00001" summary="finishing P1">
       <created>1616431600467</created>
