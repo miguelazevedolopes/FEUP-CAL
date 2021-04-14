@@ -24,7 +24,6 @@ template <class T>
 class Vertex {
     T info;						// content of the vertex
     std::vector<Edge<T> > adj;		// outgoing edges
-
     double dist = 0;
     Vertex<T> *path = NULL;
     int queueIndex = 0; 		// required by MutablePriorityQueue
