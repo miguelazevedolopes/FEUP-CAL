@@ -371,7 +371,17 @@ bool Graph<T>::relax(Vertex<T> *v, Vertex<T> *w, Edge<T> *e, double residual, do
 template <class T>
 double Graph<T>::minCostFlow(T source, T sink, double flow) {
     // TODO: implement based on slides and the given implementation of Ford-Fulkerson algorithm
+    dijkstraShortestPath(source);
+    auto v=source;
+    while(v!=sink){
+        for(auto o:v.outgoing){
+            o.cost=o.cost + v.dist + o.dest.dist;
+        }
+    }
     while()
+    while(true){
+
+    }
     return 0.0;
 }
 
