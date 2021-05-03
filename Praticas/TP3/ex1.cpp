@@ -110,12 +110,21 @@ Result nearestPoints_DC(std::vector<Point> &vp) {
     return res;
 }
 
+Result min(Result r1,Result r2){
+    if(r1.dmin<r2.dmin) return r1;
+    else return r2;
+}
 
 Result nearestPoints_DC_recursion(std::vector<Point> &vp) {
-    auto vleft=vp[0];
-    if(vp.size()>2){
-        nearestPoints_DC_recursion(vp);
-    }
+    if(vp.empty()||vp.size()==1) return {};
+    if(vp.size()==2) return{vp[0].distance(vp[1]),vp[1],vp[2]};
+    auto left=std::vector<Point>(vp.begin(),vp.begin()+vp.size()/2);
+    auto right=std::vector<Point>(vp.begin()+vp.size()/2,vp.end());
+    auto dL= nearestPoints_DC_recursion(left);
+    auto dR=nearestPoints_DC_recursion(right);
+    auto delta=min(dL,dR);
+    
+
 
     return Result();
 }

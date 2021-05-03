@@ -354,9 +354,21 @@ random
 stdlib.h
 -
 
+C:/Users/migue/Desktop/FACULDADE/CAL/Praticas/TP3/ex2.cpp
+exercises.h
+C:/Users/migue/Desktop/FACULDADE/CAL/Praticas/TP3/exercises.h
+gtest/gtest.h
+-
+
 C:/Users/migue/Desktop/FACULDADE/CAL/Praticas/TP3/exercises.h
 vector
 -
 ostream
 -
+
+C:/Users/migue/Desktop/FACULDADE/CAL/Praticas/main.cpp
+iostream
+-
+gtest/gtest.h
+C:/Users/migue/Desktop/FACULDADE/CAL/Praticas/gtest/gtest.h
 

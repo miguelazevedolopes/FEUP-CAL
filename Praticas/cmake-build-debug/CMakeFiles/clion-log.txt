@@ -11,6 +11,7 @@
 -- Check for working CXX compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
+-- Found Python: C:/Users/migue/AppData/Local/Programs/Python/Python39/python.exe (found version "3.9.4") found components: Interpreter 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/migue/Desktop/FACULDADE/CAL/Praticas/cmake-build-debug
