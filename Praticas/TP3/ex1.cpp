@@ -117,24 +117,40 @@ Result min(Result r1,Result r2){
 
 Result nearestPoints_DC_recursion(std::vector<Point> &vp) {
     if(vp.empty()||vp.size()==1) return {};
-    if(vp.size()==2) return{vp[0].distance(vp[1]),vp[1],vp[2]};
+    if(vp.size()==2) return{vp[0].distance(vp[1]),vp[0],vp[1]};
     auto left=std::vector<Point>(vp.begin(),vp.begin()+vp.size()/2);
     auto right=std::vector<Point>(vp.begin()+vp.size()/2,vp.end());
     auto dL= nearestPoints_DC_recursion(left);
     auto dR=nearestPoints_DC_recursion(right);
     auto delta=min(dL,dR);
-    
-
-
-    return Result();
+    double divisionX=(left.back().x+right.front().x)/2;
+    std::vector<Point> squarePointsLeft,squarePointsRight;
+    for(auto x:left){
+        if(x.x>(divisionX-delta.dmin)) squarePointsLeft.push_back(x);
+    }
+    for(auto x:right){
+        if(x.x<(divisionX+delta.dmin)) squarePointsRight.push_back(x);
+    }
+    for(auto l:squarePointsLeft){
+        for(auto r:squarePointsRight){
+            if(abs(l.y-r.y)>=delta.dmin||(l.x==r.x&&l.y==r.y)){
+                continue;
+            }
+            else{
+                double d=l.distance(r);
+                if(d<delta.dmin)
+                    delta=Result(d,l,r);
+            }
+        }
+    }
+    return delta;
 }
 
 
 Result nearestPoints_DC_MT(std::vector<Point> &vp) {
-    Result res;
     sortByX(vp, 0, vp.size()-1);
-    //TODO
-    return res;
+    return nearestPoints_DC_recursion(vp);
+
 }
 
 /// TESTS ///

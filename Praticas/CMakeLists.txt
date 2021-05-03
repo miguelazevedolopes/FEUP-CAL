@@ -32,7 +32,4 @@ target_link_libraries(TP4 gtest_main gmock_main)
 target_link_libraries(TP5 gtest_main gmock_main)
 target_link_libraries(TP6 gtest_main gmock_main)
 target_link_libraries(TP7 gtest_main gmock_main)
-<<<<<<< HEAD
-=======
 target_link_libraries(TP9 gtest_main gmock_main)
->>>>>>> 6863b26921af28efa1a92e57416e5c737a4cf568
