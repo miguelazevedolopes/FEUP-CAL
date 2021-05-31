@@ -1,3 +1,0 @@
-C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P1/cal_fp01_CLion/cal_fp01_CLion/TP1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P1/cal_fp01_CLion/cal_fp01_CLion/TP1/cmake-build-debug/CMakeFiles/TP1.dir
-C:/Users/migue/OneDrive/Desktop/FACULDADE/CAL/P1/cal_fp01_CLion/cal_fp01_CLion/TP1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

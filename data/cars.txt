@@ -1,0 +1,11 @@
+10
+(200,abcdef)
+(300,abefcd)
+(150,cdabef)
+(90,efcdab)
+(400,efabcd)
+(300,licens)
+(500,notlic)
+(500,notli)
+(500,notl)
+(500,not)
